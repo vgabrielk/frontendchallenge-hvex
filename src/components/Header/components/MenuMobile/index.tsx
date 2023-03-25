@@ -18,10 +18,10 @@ const MenuMobile = () => {
 
     return (
         <Fragment>
-            <Style.HamburguerMenu role="alertdialog" onClick={toogleMenu}>
+        <Style.HamburguerMenu data-testid="menuopen" onClick={toogleMenu}>
                 <MdMenu size={40} style={{ color: 'var(--white)', cursor: 'pointer' }} />
             </Style.HamburguerMenu>
-            <Style.MenuContent role="contentinfo" isOpen={isOpen}>
+            <Style.MenuContent  data-testid={isOpen ? 'menucontent' : 'menuclosed'} isOpen={isOpen}>
                 <Style.CloseMenu data-testid="closebutton" onClick={toogleMenu}>
                     <MdClose size={40} style={{ color: 'var(--white)', cursor: 'pointer' }} />
                 </Style.CloseMenu>

@@ -5,11 +5,13 @@ import { screen, render, fireEvent } from '@testing-library/react'
 import MenuMobile from ".";
 
 describe('MenuMobile', () => {
-    test('Assert that the menu has opened after onClick', () => {
+    test('Assert that the menu has opened and closed after onClick', () => {
         render(<MenuMobile />)
-        const menuButton = screen.getByRole("alertdialog");
-        const contentMenu = screen.getByRole("contentinfo");
+        const menuButton = screen.getByTestId("menuopen");
+        const contentMenu = screen.getByTestId("menuclosed");
         fireEvent.click(menuButton);
-        expect(contentMenu).toBeInTheDocument()
+        expect(contentMenu).toHaveAttribute("data-testid", "menucontent");
+        fireEvent.click(menuButton);
+        expect(contentMenu).toHaveAttribute("data-testid", "menuclosed")
     })
 })
