@@ -28,10 +28,11 @@ export const Title = styled.h1`
     }
     `
 
-export const SubTitle = styled.h3`
+export const SubTitle = styled.h4`
     width: 70%;
     color: var(--white);
     margin-top: 20px;
+    font-weight: 300;
     @media(max-width: 900px){
         width: 100%;
         font-size: 1em;

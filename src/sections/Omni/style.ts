@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
+type Props = {
+    background?: string,
+    color?: string,
+    withBorderBottom? : boolean,
+    center? : boolean
+}
 export const Omni = styled.section`
     padding: 2rem 0;
-    background-color: var(--dark-blue);
+    background-color: var(${(props : Props) => props.background});
 `
 
 export const OmniContent = styled.div`
@@ -15,6 +21,13 @@ export const OmniContent = styled.div`
     }
 
 `
+
+export const Image = styled.img`
+    width: 400px;
+    object-fit: cover;
+    transform: scaleX(-1);
+`
+
 export const OmniDetails = styled.div`
   display:grid;
   grid-template-columns: 200px 200px;
@@ -36,18 +49,30 @@ export const OmniDetails = styled.div`
 
 `
 
+export const OmniSecondSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+`
+
+
 export const Info = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: ${(props : Props) => props.center ? 'center' : 'space-between'};
     @media(max-width: 920px){
         flex-direction: column;
     }
 `
 
 export const Title = styled.h2`
+    border-bottom: ${props => props.withBorderBottom ? '5px solid var(--light-blue)' : ''};
     margin-top: 2rem;
-    width: 100%;
-    color: var(--white);
+    width: 180px;
+    height: ${props => props.withBorderBottom ? '60px' : ''};
+    color: var(${(props : Props) => props.color});
+    white-space: nowrap;
+    font-size: 1.6rem;
     @media(max-width: 900px){
         font-size: 1.8em;
     }
@@ -56,13 +81,14 @@ export const Title = styled.h2`
     }
 `
 export const SubTitle = styled.h2`
-    color: var(--light-blue);
+    color: var(${(props : Props) => props.color});
+    font-size: 1.6rem;
     @media(max-width: 900px){
         font-size: 1.4em;
     }
     `
 export const Paragraph = styled.p`
-    color: var(--white);
+    color: var(${(props : Props) => props.color});
     @media(max-width: 900px){
         font-size: .9em;
     }
