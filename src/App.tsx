@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useState } from 'react'
 import GlobalStyles from './globalStyles'
+import HomePage from './pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,7 +8,7 @@ function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      <h1>Teste</h1>
+      <HomePage/>
     </Fragment>
   )
 }
