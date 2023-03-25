@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react'
 import GlobalStyles from './globalStyles'
-import HomePage from './pages/Home'
+import Hub from '../Hub'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +8,7 @@ function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      <HomePage/>
+      <Hub/>
     </Fragment>
   )
 }

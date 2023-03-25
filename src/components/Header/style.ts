@@ -4,6 +4,8 @@ export const Header = styled.header`
     width: 100%;
     height: auto;
     background-color: var(--dark-gray);
+    position: sticky;
+    z-index: 2;
 `
 export const HeaderContent = styled.nav`
     display: flex;

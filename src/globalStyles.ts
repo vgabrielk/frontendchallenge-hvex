@@ -16,19 +16,19 @@ const GlobalStyles = createGlobalStyle`
     font-family: var(--mainFont);
   }
   h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
   h2 {
     font-size: 32px;
   }
   h3 {
-    font-size: 24px;
-  }
-  h4 {
     font-size: 20px;
   }
-  h5 {
+  h4 {
     font-size: 16px;
+  }
+  h5 {
+    font-size: 12px;
   }
 `;
 
