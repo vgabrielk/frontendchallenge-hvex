@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const MainPage = styled.main`
     gap: 20px;
     background-color: var(--dark-blue);
-    height: 100vh;
+    height: 90vh;
     padding: 2rem 0;
     @media(max-width:900px){
         height: auto;

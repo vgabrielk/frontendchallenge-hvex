@@ -4,10 +4,15 @@ import GlobalStyles from './globalStyles'
 import MainPage from './sections/MainPage'
 import Omni from './sections/Omni'
 import SmartGrid from './sections/SmartGrid'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+useEffect(() => {
+  AOS.init({
+    duration: 2000
+  })
+},[])
   return (
     <Fragment>
       <GlobalStyles />

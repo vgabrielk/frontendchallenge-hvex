@@ -15,13 +15,13 @@ const Omni = () => {
             <Container>
                 <S.Info>
                     <S.OmniContent>
-                        <S.Title>OMNI TRAFO</S.Title>
-                        <S.SubTitle>É o dispositivo capaz de integrar os transformadores as redes inteligentes</S.SubTitle>
-                        <S.Paragraph>O Omni Trafo envia informações em tempo real, permitindo a administração remota de dados importantes da rede elétrica, como tensão, corrente, potência passante, energia, temperatura, sobrecarga entre outros, mapeando seu funcionamento, prevendo a vida útil dos ativos e aferindo perdas técnicas e não técnicas.</S.Paragraph>
+                        <S.Title data-aos="fade-up">OMNI TRAFO</S.Title>
+                        <S.SubTitle data-aos="fade-up">É o dispositivo capaz de integrar os transformadores as redes inteligentes</S.SubTitle>
+                        <S.Paragraph data-aos="fade-up">O Omni Trafo envia informações em tempo real, permitindo a administração remota de dados importantes da rede elétrica, como tensão, corrente, potência passante, energia, temperatura, sobrecarga entre outros, mapeando seu funcionamento, prevendo a vida útil dos ativos e aferindo perdas técnicas e não técnicas.</S.Paragraph>
                     </S.OmniContent>
                     <S.OmniDetails>
                         {OmniData.map((item: OmniType) => (
-                            <S.Card key={item.id}>
+                            <S.Card data-aos="flip-left" key={item.id}>
                                 <img width='80px' src={item.image} alt="" />
                                 <p>{item.title}</p>
                             </S.Card>
