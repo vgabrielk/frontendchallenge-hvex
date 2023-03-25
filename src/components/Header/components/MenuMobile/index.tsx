@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import * as Style from './style'
 import { MdMenu, MdClose } from 'react-icons/md'
-import { NavData } from '../../../../Mock/NavData'
+import { NavData } from '../../../../Mock/NavData/NavData'
 import Button from '../../../Button'
 
 type NavigationData = {

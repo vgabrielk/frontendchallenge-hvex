@@ -3,7 +3,7 @@ import { Container } from '../../styles/components/Container'
 import * as Style from './style'
 import Logo from '../../assets/svg/Logo.svg'
 import Button from '../Button'
-import { NavData } from '../../Mock/NavData'
+import { NavData } from '../../Mock/NavData/NavData'
 import MenuMobile from './components/MenuMobile'
 
 type NavigationData = {

@@ -3,8 +3,11 @@ import styled from "styled-components"
 export const MainPage = styled.main`
     gap: 20px;
     background-color: var(--dark-blue);
-    height: 78vh;
+    height: 100vh;
     padding: 2rem 0;
+    @media(max-width:900px){
+        height: auto;
+    }
     `
 export const PageContent = styled.div`
     display: flex;

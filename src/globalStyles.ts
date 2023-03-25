@@ -8,12 +8,15 @@ const GlobalStyles = createGlobalStyle`
     --gray-blue: #1C2C44;    
     --light-blue: #00B6DE;
     --white: #fdfdfd;
+    --brown: #373737;
+    --green-blue: #115678;
     --mainFont: 'Inter', sans-serif;
   }
   * {
     margin: 0;
     padding: 0;
     font-family: var(--mainFont);
+    box-sizing: border-box;
   }
   h1 {
     font-size: 44px;

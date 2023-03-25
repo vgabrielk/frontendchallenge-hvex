@@ -1,9 +1,9 @@
-import { NavData } from "./NavData"
+import { UtilitiesData } from "./UtilitiesData"
 
 
-describe('NavData', () => {
+describe('UtilitiesData', () => {
     test("Assert that the array receive all data correctly", () => {
-        NavData.forEach(item => (
+        UtilitiesData.forEach(item => (
             expect(item).toHaveProperty('title'),
             expect(item).toHaveProperty('id')
         ))
