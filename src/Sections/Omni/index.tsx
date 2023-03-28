@@ -38,7 +38,7 @@ const Omni = () => {
                 <S.Omni background="--white">
                     <S.Info>
                         <S.OmniContent>
-                            <S.Image data-testid="image-omni" src={OmniTrafoImage} />
+                            <S.Image data-aos="fade" data-testid="image-omni" src={OmniTrafoImage} />
                         </S.OmniContent>
                         <S.OmniSecondSection>
                             <S.Title data-testid="second-title" color='--dark-blue' withBorderBottom data-aos="fade-up">OMNI TRAFO</S.Title>

@@ -10,7 +10,9 @@ const GlobalStyles = createGlobalStyle`
     --white: #fdfdfd;
     --brown: #373737;
     --green-blue: #115678;
+    --gray: #F4F4F4;
     --mainFont: 'Inter', sans-serif;
+
   }
   * {
     margin: 0;

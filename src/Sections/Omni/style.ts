@@ -7,6 +7,7 @@ type Props = {
     center?: boolean
 }
 export const Omni = styled.section`
+    height: auto;
     padding: 2rem 0;
     background-color: var(${(props: Props) => props.background});
 `
@@ -15,7 +16,6 @@ export const OmniContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
     gap: 20px;
     width: 45%;
     @media(max-width: 920px){
@@ -25,6 +25,7 @@ export const OmniContent = styled.div`
 `
 
 export const OmniDetails = styled.div`
+  padding: 2rem 0;
   display:grid;
   grid-template-columns: 200px 200px;
   grid-row: auto auto;
@@ -147,7 +148,6 @@ export const OmniSolutions = styled.div`
         grid-template-columns: 100px 100px 100px  100px;
         }
      @media(max-width: 920px){
-        margin-top: 2rem;
         place-content: center;
         grid-template-columns: 150px 150px 150px  150px;
         place-items: center;
@@ -163,7 +163,6 @@ export const OmniSolutions = styled.div`
 export const Image = styled.img`
     width: 350px;
     object-fit: cover;
-    transform: scaleX(-1);
     @media(max-width: 920px){
         display: none;
     }
