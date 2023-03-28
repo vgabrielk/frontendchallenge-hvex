@@ -1,8 +1,7 @@
-import { describe, test, expect } from "vitest";
+import { describe, expect } from "vitest";
 
 import { screen, render } from '@testing-library/react'
 import Header from ".";
-import { NavData } from "../../Mock/NavData/NavData";
 
 describe('Header', () => {
     it("Rendering the Header component", () => {

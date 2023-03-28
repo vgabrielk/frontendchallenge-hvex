@@ -4,6 +4,7 @@ export const Info = styled.section`
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     background-color: var(--gray);
     padding: 2rem 4rem;
     box-sizing: border-box;
@@ -11,7 +12,7 @@ export const Info = styled.section`
         flex-direction: column;
     }
     @media(max-width: 810px) {
-        padding: 0 2rem;
+        padding: 2rem;
     }
 `
 

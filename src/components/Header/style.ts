@@ -5,7 +5,7 @@ export const Header = styled.header`
     height: auto;
     background-color: var(--dark-gray);
     position: sticky;
-    z-index: 2;
+    z-index: 10;
 `
 export const HeaderContent = styled.nav`
     display: flex;
