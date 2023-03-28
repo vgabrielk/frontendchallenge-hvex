@@ -1,6 +1,8 @@
 import DataIntegration from '../../assets/svg/data-integration.svg'
 import Actives from '../../assets/svg/ativos-eletricos.svg'
 import SmartComunication from '../../assets/svg/smart-comunication.svg'
+import Protection from '../../assets/svg/protecao.svg'
+
 
 import Monitoramento from '../../assets/svg/relogio.svg'
 import Seta from '../../assets/svg/seta.svg'
@@ -17,7 +19,7 @@ export const OmniData = {
         {
             id: 1,
             title: 'Sistema de Proteção',
-            image: SmartComunication
+            image: Protection
         },
         {
             id: 2,
