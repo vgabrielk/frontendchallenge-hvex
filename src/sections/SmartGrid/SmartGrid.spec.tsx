@@ -5,19 +5,18 @@ import SmartGrid from ".";
 
 
 describe('SmartGrid', () => {
-    const titleJSX = 'Seja bem-vindo a era da energia inteligente'
-    const subtitleJSX = 'As redes inteligentes são um caminho sem volta, o desenvolvimento e disceminação de dispositivos de medição e monitoramento são as ferramentas para redução de custos, perdas e trazem mais previsibilidade para as utilities de energia.'
-    test('Assert that the title do not have errors', () => {
+    
+    it('Assert that the title do not have errors', () => {
         render(<SmartGrid />);
-        const title = screen.getByText(titleJSX)
-        expect(title).toBeInTheDocument()
+        const title = screen.getByTestId("title")
+        expect(title.innerHTML).toEqual("Seja bem-vindo a era da energia inteligente")
     })
-    test('Assert that the subtitle do not have errors', () => {
+    it('Assert that the subtitle do not have errors', () => {
         render(<SmartGrid />);
-        const subtitle = screen.getByText(subtitleJSX)
-        expect(subtitle).toBeInTheDocument()
+        const subtitle = screen.getByTestId("subtitle")
+        expect(subtitle.innerHTML).toEqual("As redes inteligentes são um caminho sem volta, o desenvolvimento e disceminação de dispositivos de medição e monitoramento são as ferramentas para redução de custos, perdas e trazem mais previsibilidade para as utilities de energia.")
     })
-    test('Should render the image', () => {
+    it('Should render the image', () => {
         render(<SmartGrid />);
         const image = screen.getByTestId("image")
         expect(image).toBeInTheDocument()

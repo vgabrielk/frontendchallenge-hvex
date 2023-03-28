@@ -5,11 +5,11 @@ import Header from ".";
 import { NavData } from "../../Mock/NavData/NavData";
 
 describe('Header', () => {
-    test("Rendering the Header component", () => {
+    it("Rendering the Header component", () => {
         const { debug } = render(<Header />)
         debug()
     })
-    test("Should show the logo img", () => {
+    it("Should show the logo img", () => {
         render(<Header />)
         const logo = screen.getByRole("img")
         expect(logo).toBeInTheDocument()

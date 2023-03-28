@@ -3,29 +3,25 @@ import styled from "styled-components";
 type Props = {
     background?: string,
     color?: string,
-    withBorderBottom? : boolean,
-    center? : boolean
+    withBorderBottom?: boolean,
+    center?: boolean
 }
 export const Omni = styled.section`
     padding: 2rem 0;
-    background-color: var(${(props : Props) => props.background});
+    background-color: var(${(props: Props) => props.background});
 `
 
 export const OmniContent = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
     gap: 20px;
     width: 45%;
     @media(max-width: 920px){
         width: 100%;
     }
 
-`
-
-export const Image = styled.img`
-    width: 400px;
-    object-fit: cover;
-    transform: scaleX(-1);
 `
 
 export const OmniDetails = styled.div`
@@ -54,12 +50,15 @@ export const OmniSecondSection = styled.div`
     flex-direction: column;
     gap: 20px;
     width: 55%;
+    @media(max-width: 920px){
+        width: 100%;
+    }
 `
 
 
 export const Info = styled.div`
     display: flex;
-    justify-content: ${(props : Props) => props.center ? 'center' : 'space-between'};
+    justify-content: ${(props: Props) => props.center ? 'center' : 'space-between'};
     @media(max-width: 920px){
         flex-direction: column;
     }
@@ -70,7 +69,7 @@ export const Title = styled.h2`
     margin-top: 2rem;
     width: 180px;
     height: ${props => props.withBorderBottom ? '60px' : ''};
-    color: var(${(props : Props) => props.color});
+    color: var(${(props: Props) => props.color});
     white-space: nowrap;
     font-size: 1.6rem;
     @media(max-width: 900px){
@@ -81,14 +80,14 @@ export const Title = styled.h2`
     }
 `
 export const SubTitle = styled.h2`
-    color: var(${(props : Props) => props.color});
+    color: var(${(props: Props) => props.color});
     font-size: 1.6rem;
     @media(max-width: 900px){
         font-size: 1.4em;
     }
     `
 export const Paragraph = styled.p`
-    color: var(${(props : Props) => props.color});
+    color: var(${(props: Props) => props.color});
     @media(max-width: 900px){
         font-size: .9em;
     }
@@ -117,4 +116,77 @@ export const Card = styled.div`
         transform: translateX(-5px);
         cursor: pointer;
     }
+`
+
+export const OmniSolutions = styled.div`
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row: auto auto;    
+    place-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    div {
+        transition: all .5s;
+        margin: 0 auto;
+        &:hover {
+        cursor: pointer;
+        opacity: .5;
+    }
+    }
+    p {
+        text-align: center;
+        color: var(--dark-blue);
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: .8rem;
+    }
+    &::-webkit-scrollbar {
+     height: 0;
+    }
+    @media(max-width: 1100px){
+        grid-template-columns: 100px 100px 100px  100px;
+        }
+     @media(max-width: 920px){
+        margin-top: 2rem;
+        place-content: center;
+        grid-template-columns: 150px 150px 150px  150px;
+        place-items: center;
+        }
+     @media(max-width: 745px){
+        grid-template-columns:  150px 150px 150px;
+     }
+     @media(max-width: 553px){
+            grid-template-columns:  150px;
+        }
+`
+
+export const Image = styled.img`
+    width: 350px;
+    object-fit: cover;
+    transform: scaleX(-1);
+    @media(max-width: 920px){
+        display: none;
+    }
+`
+
+export const SolutionsCard = styled.div`
+    background-color: var(--gray-blue);
+    padding:20px;
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    gap: 20px;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:sans-serif;
+    text-align: center;
+    transition: all .5s ease;
+    p {
+        color: var(--light-blue);
+        font-weight: bold;
+    } 
+   
 `

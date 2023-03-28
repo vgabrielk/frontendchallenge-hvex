@@ -5,25 +5,22 @@ import MainPage from ".";
 
 
 describe('MainPage', () => {
-    const titleJSX = 'Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente'
-    const subtitleJSX = 'Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente'
-    const buttonTextJSX = 'Quero mais informações'
-    test('Assert that the title do not have errors', () => {
+    it('Assert that the title do not have errors', () => {
         render(<MainPage />);
-        const title = screen.getByText(titleJSX)
-        expect(title).toBeInTheDocument()
+        const title = screen.getByTestId("title")
+        expect(title.innerHTML).toEqual("Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente")
     })
-    test('Assert that the subtitle do not have errors', () => {
+    it('Assert that the subtitle do not have errors', () => {
         render(<MainPage />);
-        const subtitle = screen.getByText(subtitleJSX)
-        expect(subtitle).toBeInTheDocument()
+        const subtitle = screen.getByTestId("subtitle")
+        expect(subtitle.innerHTML).toEqual("Tenha acesso a informações em tempo real, administração remota de dados importantes da rede elétrica como: tensão, corrente, potência passante, energia, temperatura, sobrecarga entre outros, mapeando seu funcionamento, prevendo a vida útil dos ativos e aferindo perdas técnicas e não técnicas.")
     })
-    test('Assert that the button do not have errors', () => {
+    it('Assert that the button do not have errors', () => {
         render(<MainPage />);
-        const button = screen.getByText(buttonTextJSX)
-        expect(button).toBeInTheDocument()
+        const button = screen.getByTestId("button")
+        expect(button.innerHTML).toEqual("Quero mais informações")
     })
-    test('Should render the image', () => {
+    it('Should render the image', () => {
         render(<MainPage />);
         const image = screen.getByRole("img")
         expect(image).toBeInTheDocument()

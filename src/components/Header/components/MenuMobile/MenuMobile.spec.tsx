@@ -5,7 +5,7 @@ import { screen, render, fireEvent } from '@testing-library/react'
 import MenuMobile from ".";
 
 describe('MenuMobile', () => {
-    test('Assert that the menu has opened and closed after onClick', () => {
+    it('Assert that the menu has opened and closed after onClick', () => {
         render(<MenuMobile />)
         const menuButton = screen.getByTestId("menuopen");
         const contentMenu = screen.getByTestId("menuclosed");
