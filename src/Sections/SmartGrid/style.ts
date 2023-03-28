@@ -5,11 +5,8 @@ export const SmartGrid = styled.section`
     justify-content: center;
     width: 100%;
     align-items: flex-start;
-    padding: 2rem ;
+    padding: 2rem 0;
     gap: 4rem;
-    @media(max-width:900px) {
-        padding: 2rem 0;
-    }
 `
 
 export const Image = styled.img`

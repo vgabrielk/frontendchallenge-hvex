@@ -17,6 +17,8 @@ export const PageContent = styled.div`
 `
 
 export const Title = styled.h1`
+    position: initial;
+    z-index: 2;
     width: 70%;
     color: var(--white);
     @media(max-width: 900px){
@@ -29,6 +31,8 @@ export const Title = styled.h1`
     `
 
 export const SubTitle = styled.h4`
+    position: initial;
+    z-index: 2;
     width: 70%;
     color: var(--white);
     margin-top: 20px;
@@ -44,10 +48,10 @@ export const SubTitle = styled.h4`
 `
 export const ImageRight = styled.img`
     position: absolute;
-    right: 0;
+    right: 2rem;
     top: 2rem;
     z-index: 1;
-    width: 300px;
+    width: 400px;
     @media(max-width: 900px){
         display: none;
     }
