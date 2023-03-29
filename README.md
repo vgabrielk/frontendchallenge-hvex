@@ -36,13 +36,6 @@ Inicie o servidor
 
 ## Deploy
 
-Para ver o deploy do projeto
 
-(https://desafio-msb.netlify.app/)
 
 ## Features
-
-- CRUD Usuários / tarefas (todas operações)
-- Alterar status do usuário ou tarefa de uma forma diferente
-- Filtrar por tarefa concluida ou não
-
