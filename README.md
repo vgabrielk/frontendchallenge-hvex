@@ -33,7 +33,7 @@ Vá até o diretório do projeto
 
 3 - Depois inicie o servidor com esse comando :
 ```bash
-  sudo docker start CONTAINER_ID bash
+  sudo docker start CONTAINER_ID
 ```
 4 - Seu servidor irá rodar em uma dessas portas abaixo : 
 ```bash
