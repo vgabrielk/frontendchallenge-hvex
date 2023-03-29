@@ -28,7 +28,7 @@ const Faq = () => {
                 <Fragment key={item.id}>
                     <S.FaqContent data-aos="fade-up" onClick={() => toogle(item)}>
                         <span style={{transform: `rotate(${clicked === item ? '0' : '90deg'})`}}>
-                            <img src={Chevron} alt="" />
+                            <img src={Chevron} alt="Chevron" />
                         </span>
                         <p>{item.question}</p>
                     </S.FaqContent>
