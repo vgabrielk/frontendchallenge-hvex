@@ -63,6 +63,15 @@ export const Social = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  div {
+    img {
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+  }
   @media (max-width: 768px) {
     justify-content: flex-start;
   }
