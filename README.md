@@ -24,22 +24,28 @@ Vá até o diretório do projeto
 1 - Rode o seguinte comando dentro da pasta do projeto 
 ( Apenas usar sudo se estiver no terminal linux )
 ```bash
-    sudo docker build -t frontend-hvex .
+  sudo docker build -t frontend-hvex .
 ```
 2 - Agora rode o seguinte comando : 
 ```bash
-    sudo docker run -p 8080:8080 -d frontend-hvex
+  sudo docker run -p 8080:8080 -d frontend-hvex
 ```
 
-3 - Seu servidor irá em uma dessas portas abaixo : 
+3 - Depois inicie o servidor com esse comando :
 ```bash
-   http://localhost:8080/ ou http://0.0.0.0:8080/
+  sudo docker start CONTAINER_ID bash
+```
+4 - Seu servidor irá rodar em uma dessas portas abaixo : 
+```bash
+  http://localhost:8080/ ou http://0.0.0.0:8080/
 ```
 
 ## Testes unitários
 
 Ainda no diretório raiz, execute o seguinte comando : 
-
+```bash
+  sudo docker exec -it CONTAINER_ID bash
+```
 ```bash
   npm run test
 ```
