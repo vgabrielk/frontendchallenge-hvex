@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import Performance from './Sections/Performance'
 import KnowMore from './Sections/KnowMore'
 import Faq from './Sections/Faq'
+import Footer from './Sections/Footer'
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       <Performance />
       <KnowMore />
       <Faq/>
+      <Footer/>
     </Fragment>
   )
 }
