@@ -8,6 +8,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Performance from './Sections/Performance'
 import KnowMore from './Sections/KnowMore'
+import Faq from './Sections/Faq'
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Omni />
       <Performance />
       <KnowMore />
+      <Faq/>
     </Fragment>
   )
 }

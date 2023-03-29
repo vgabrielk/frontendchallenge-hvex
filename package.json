@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest --watch"
   },
   "dependencies": {
     "@jest/globals": "^29.5.0",
