@@ -41,7 +41,7 @@ export const LogoImage = styled.img`
 export const FooterBlock = styled.div``;
 
 export const InfoContent = styled.div`
-  width: auto;
+  width: 100%;
   box-sizing: border-box;
 `;
 
